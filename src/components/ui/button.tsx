@@ -1,2 +1,1 @@
-import React from 'react'
-export function Button({ variant='default', size='md', className='', ...props }: any) { const map:any = { default: 'btn btn-default', outline: 'btn btn-outline', secondary: 'btn btn-secondary', destructive: 'btn btn-destructive', ghost: 'btn' }; return <button className={(map[variant] ?? map.default)+' '+className} {...props} /> }
+export function Button({variant='primary', className='', ...props}:any){ const m:any={primary:'btn btn-primary', outline:'btn btn-outline', danger:'btn btn-danger'}; return <button className={(m[variant]||m.primary)+' '+className} {...props}/> }
