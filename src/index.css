@@ -1,0 +1,31 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Simple shadcn-like styles */
+.btn { @apply inline-flex items-center justify-center rounded-2xl border px-3 py-2 text-sm font-medium shadow-sm; }
+.btn-outline { @apply bg-white border-slate-300 text-slate-700 hover:bg-slate-50; }
+.btn-default { @apply bg-slate-900 text-white border-slate-900 hover:bg-slate-800; }
+.btn-secondary { @apply bg-slate-100 text-slate-900 border-slate-200 hover:bg-slate-200; }
+.btn-destructive { @apply bg-red-600 text-white border-red-600 hover:bg-red-700; }
+
+.card { @apply rounded-2xl border bg-white shadow-sm; }
+.card-header { @apply border-b p-4; }
+.card-title { @apply text-lg font-semibold; }
+.card-content { @apply p-4; }
+
+.input { @apply w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm; }
+.textarea { @apply w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm; }
+
+.badge { @apply inline-flex items-center rounded-full border px-2 py-0.5 text-xs; }
+.badge-secondary { @apply border-transparent bg-slate-200; }
+.badge-outline { @apply border-slate-300 text-slate-700; }
+
+.tabs { @apply flex gap-2; }
+.tabs-trigger { @apply btn btn-outline; }
+.tabs-trigger[data-active='true'] { @apply btn-default; }
+.tabs-content { @apply mt-4; }
+
+.scroll-area { @apply overflow-auto; }
+.separator { @apply h-px w-full bg-slate-200 my-3; }
