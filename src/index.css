@@ -3,7 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Simple shadcn-like styles */
 .btn { @apply inline-flex items-center justify-center rounded-2xl border px-3 py-2 text-sm font-medium shadow-sm; }
 .btn-outline { @apply bg-white border-slate-300 text-slate-700 hover:bg-slate-50; }
 .btn-default { @apply bg-slate-900 text-white border-slate-900 hover:bg-slate-800; }
